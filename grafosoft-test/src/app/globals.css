@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primary text-gray-900 min-h-screen max-w-[1360px] mx-auto;
+  font-family: "Red Hat Display", sans-serif;
+  min-width: 350px;
+}
+
+.caret-icon-before {
+  @apply relative before:absolute before:-translate-y-2/4 before:-left-2 before:top-2/4 before:content-[url('/CaretIconSolid.svg')];
+}
