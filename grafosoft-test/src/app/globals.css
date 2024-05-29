@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primary text-gray-900 min-h-screen mx-auto;
+  font-family: "Red Hat Display", sans-serif;
+  min-width: 350px;
+}
