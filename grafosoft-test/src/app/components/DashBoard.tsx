@@ -12,32 +12,38 @@ import { CaretIconSolid } from './Icons/CaretIconSolid';
 import ListCards from './Card/ListCards';
 import TableRecentUpdates from './RecentUpdates/TableRecentUpdates';
 
-export default function Module() {
+export default function Module({ className = "" }) {
 
     return (
-        <div className="bg-white md:w-9/12 lg:w-10/12 rounded-t-25 md:rounded-tr-none md:rounded-l-25">
+        <div className={`bg-white rounded-t-25 md:rounded-tr-none md:rounded-l-25 ${className}`}>
             {/* User Menu Options */}
-            <div className='flex justify-between p-4'>
-                <div className='flex justify-center items-center gap-x-3'>
-                    <ButtonIcon className='bg-secondary-o25'>
-                        <NotificationIconOutline className='text-secondary' height={35} width={35} />
-                    </ButtonIcon>
-                    <ButtonIcon className='bg-primary-o25'>
-                        <MessageIconOutline className='text-primary' height={35} width={35} />
-                    </ButtonIcon>
+            <div className='m-4 grid grid-cols-2 lg:grid-cols-4' >
+                <div className='place-content-center justify-self-start lg:col-span-1 lg:justify-self-center xl:justify-self-end'>
+                    <div className='flex justify-center items-center gap-x-3'>
+                        <ButtonIcon className='bg-secondary-o25'>
+                            <NotificationIconOutline className='text-secondary' height={35} width={35} />
+                        </ButtonIcon>
+                        <ButtonIcon className='bg-primary-o25'>
+                            <MessageIconOutline className='text-primary' height={35} width={35} />
+                        </ButtonIcon>
+                    </div>
                 </div>
-                <div className='flex justify-center items-center gap-x-3'>
-                    <span className='font-semibold text-lg text-gray-700'>Jaider Mendoza</span>
-                    <UserIcon src="/UserIcon.jpg" width={50} height={50} />
+
+                <div className='place-content-center justify-self-end lg:col-span1'>
+                    <div className='flex justify-center items-center gap-x-3'>
+                        <span className='font-semibold text-lg text-gray-700 text-end'>Jaider Mendoza</span>
+                        <UserIcon src="/UserIcon.jpg" width={50} height={50} />
+                    </div>
+                </div>
+
+                <div className='mt-4 col-span-2 lg:col-span-2 lg:order-first'>
+                    <SearchBar />
                 </div>
             </div>
-            <div>
-                <SearchBar />
-            </div>
+
             {/* Main Content Page */}
             <div>
-                <div className='m-4 grid grid-cols-1 auto-rows-min lg:grid-cols-3 xl:grid-cols-4 gap-4'>
-
+                <div className='m-4 grid grid-cols-1 auto-rows-min lg:grid-cols-3 lg:mr-0 xl:grid-cols-4 gap-4'>
                     {/* First Banner Section */}
                     <div className='mb-4 col-span-1 lg:col-span-2 xl:col-span-3'>
                         <Banner srcImg='/Reading-banner2.png'>
@@ -128,8 +134,8 @@ export default function Module() {
                 </div>
 
 
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }
 
