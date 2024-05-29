@@ -5,11 +5,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-primary text-gray-900 min-h-screen max-w-[1360px] mx-auto;
+  @apply bg-primary text-gray-900 min-h-screen mx-auto;
   font-family: "Red Hat Display", sans-serif;
   min-width: 350px;
-}
-
-.caret-icon-before {
-  @apply relative before:absolute before:-translate-y-2/4 before:-left-2 before:top-2/4 before:content-[url('/CaretIconSolid.svg')];
 }

@@ -1,5 +1,5 @@
 'use client';
-import { findSourceMap } from "module";
+
 import { useEffect, useState } from "react";
 import UserIcon from '../Buttons/UserIcon';
 import { formatNumber } from "@/app/utils/formatNumber";
@@ -12,8 +12,8 @@ export default function TableAuthors() {
         const apiData = async () => {
             try {
                 const url = 'https://rickandmortyapi.com/api/character/1,2,3';
-                const data = await (await fetch(url)).json();
-                setData(data);
+                const result = await (await fetch(url)).json();
+                setData(result);
             } catch (err) {
                 console.log(err);
             } finally {
@@ -21,14 +21,13 @@ export default function TableAuthors() {
             }
         }
         apiData();
-    }, [])
+    }, []);
 
-    console.log(data);
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <p className="text-gray-500mt-4">Cargando Informacion...</p>;
 
     return (
-        <div className="min-w-full divide-y-2 divide-gray-200 mt-5">
-            <ul className="divide-y divide-gray-200">
+        <div className="min-w-full mt-5">
+            <ul className="divide-y divide-gray-300">
                 {data && data.map((item: any) => (
                     <li key={item.id} className="grid grid-cols-4">
                         {/* Left Side */}
@@ -42,9 +41,9 @@ export default function TableAuthors() {
                             </div>
                         </div>
                         {/* Right Side */}
-                        <div className="flex flex-col items-end gap-x-5 md:flex-row md:justify-center md:items-center md:col-start-4 md:col-end-5">
-                            <span className="font-light text-gray-500">Lectores</span>
-                            <span className="text-2xl">{formatNumber(Math.random() * 100000)}</span>
+                        <div className="flex flex-col items-end md:flex-row md:justify-end md:items-center col-span-1 md:col-span-2 text-end">
+                            <span className="font-light text-gray-500 md:mr-4">Lectores</span>
+                            <span className="text-2xl">{formatNumber(Math.round(Math.random() * 10000))}</span>
                         </div>
                     </li>
                 ))}
