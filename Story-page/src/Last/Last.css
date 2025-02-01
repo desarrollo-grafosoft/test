@@ -80,7 +80,7 @@
     height: 30%;
 }
 .item-author{
-    height: 20%;
+    height: 40%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -273,7 +273,39 @@
          font-size: 2.3vw;
      }
 }
-
+@media (max-width: 486px) {
+    .last-item{
+        height: 88%;
+        width: 48%;
+    }
+    .item-texto{
+        gap: 8%;   
+    }
+    .item-texto h4{
+        font-size: 4vw;
+    }
+    .item2 p{
+        font-size: 1.9vw;
+    }
+    .item2 h4{
+        font-size: 2.3vw;
+    }
+    .item-texto p{
+        font-size: 2.5vw;
+     }
+}
+@media (max-width: 470px){
+    .last-item{
+        height: 85%;
+        width: 48%;
+    }
+}
+@media (max-width: 450px){
+    .last-item{
+        height: 80%;
+        width: 48%;
+    }
+}
 @media (max-width: 336px) {
     .last-text-container{
         display: flex;
