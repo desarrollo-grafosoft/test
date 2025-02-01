@@ -336,3 +336,17 @@
         font-size: 3vw;
     }
 }
+@media (max-width: 275px) {
+    .item-texto{
+        gap: 8%;   
+    }
+    .item-texto h4{
+        font-size: 4.8vw;
+    }
+    .item2 h4{
+        font-size: 3.1vw;
+    }
+    .item-texto p{
+        font-size: 3.5vw;
+     }
+}
