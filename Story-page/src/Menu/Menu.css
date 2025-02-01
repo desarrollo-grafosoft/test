@@ -1,0 +1,105 @@
+.menu{
+    width: 20%;
+    height: 100vh;
+    background: #7DA870 ;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.lista li {
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 16px;
+    position: relative; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista li.active {
+    font-weight: bold;      
+}
+
+.lista li:hover {
+   color: azure;     
+}
+
+.lista li.active::before {
+    content: "❯"; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 14px;
+}
+
+.imagen{
+    color: white;
+    width: 30%;
+    height: auto;
+    background: #90B687;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.button{
+    color: white;
+    background: #8FB586 ;
+    padding: 4%;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 2px 1px 12px  rgba(0, 0, 0, 0.175);
+}
+
+@media (max-width:767px) {
+    .menu{
+        width: 100%;
+        height: 20%;
+        flex-direction: row;
+    }
+    .lista{
+        display: flex;
+        width: 40%;
+    }
+    .lista li {
+        padding: 1% 5%;
+        font-size: 1.8vw;
+    }   
+    .imagen{
+        width: 6%;
+        padding: 1%;
+        border-radius: 10px;
+    }
+    .button{
+        padding: 1%;
+        width: 10%
+    }
+    
+}
+@media (max-width: 576px) {
+    .button{   
+        width: 15%;
+        font-size: 2vw;
+        border-radius: 5px;
+
+    }
+    .lista li {
+        padding: 1% 5%;
+        font-size: 1.8vw;
+    }   
+    .lista{
+        width: 55%;
+        justify-content: space-evenly;
+    }
+    .lista li.active::before {
+        top: 40%;
+        font-size: 2vw;
+    }
+    
+}
