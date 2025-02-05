@@ -22,6 +22,10 @@
     justify-content: space-between;
     align-items: center;
 }
+.head-title{
+    font-size: 1.5vw;
+    font-family: 'Red Hat Display', sans-serif;
+}
 .list-last {
     list-style: none;
     display: flex;
@@ -65,6 +69,16 @@
     height: 47%;
     border-radius: 10px;
 }
+.view-button-last{
+    font-size: 0.9rem; 
+    color: #6eaa68;
+    background-color: #E6EDE5; 
+    border: none; 
+    border-radius: 15px;
+    padding: 3% 5%; 
+    cursor: pointer; 
+    font-size: 60%;
+}
 .img1{
     background: #FFFFFF;
     width: 99%;
@@ -102,11 +116,11 @@
  }
  .item-texto p{
     font-size: 0.8vw;
-    color: #AC95A4;
+    color: #8d94a7;
  }
 .item2 p{
     font-size: 0.8vw;
-    color: #AC95A4;
+    color: #8d94a7;
 }
 .item2 h4{
     font-size: 1vw;
@@ -128,6 +142,9 @@
     }
     .item2 h4{
         font-size: 1.2vw;
+    }
+    .head-title{
+        font-size: 2.5vw;
     }
 }
 
@@ -166,6 +183,9 @@
     }
     .item2 h4{
         font-size: 1.3vw;
+    }
+    .head-title{
+        font-size: 4vw;
     }
     .list-last li{
         font-size: 1.6vw;
@@ -216,6 +236,9 @@
     .item2 h4{
         font-size: 1.3vw;
     }
+    .head-title{
+        font-size: 3.5vw;
+    }
  
 }
 @media (max-width:640px){
@@ -231,6 +254,9 @@
      .item2 h4{
          font-size: 1.3vw;
      }
+     .head-title{
+        font-size: 4vw;
+    }
 }
 @media (max-width: 576px) {
     .last-container{
@@ -272,6 +298,9 @@
      .item2 h4{
          font-size: 2.3vw;
      }
+     .head-title{
+        font-size: 4.8vw;
+    }
 }
 @media (max-width: 486px) {
     .last-item{
@@ -298,6 +327,9 @@
     .last-item{
         height: 85%;
         width: 48%;
+    }
+    .head-title{
+        font-size: 6vw;
     }
 }
 @media (max-width: 450px){

@@ -21,15 +21,15 @@
 }
 @media (max-width: 576px) {
     .container {
-        grid-template-rows: 0.5fr 1fr  0.7fr repeat(3, 1fr ) 0.1fr 1fr;
+        grid-template-rows: 0.3fr 1fr  0.7fr repeat(3, 1fr ) 0.1fr 1fr;
         gap: 10px;
     }
 }
 @media (max-width: 336px) {
     body .container {
         display: grid;
-        grid-template-rows: 0.3fr 1fr 0.2fr 0.5fr  repeat(2, 1.5fr) 0.5fr repeat(3, 1fr );
+        grid-template-rows: 0.2fr 1fr 0.1fr 0.5fr  repeat(2, 1.5fr) 0.5fr repeat(3, 1fr );
         gap: 10px;
-        height: 200vh;
+        height: 210vh;
     }
 }

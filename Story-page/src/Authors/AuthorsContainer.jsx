@@ -10,7 +10,7 @@ function AuthorsContainer() {
         
         <div className="container-global">
             <div className="container-author">
-                <h3 className="header-title">Autores</h3>
+                <h3 className="head-title">Autores</h3>
                 <button className="view-all-button">Ver Todo</button>
                     {data.results && data.results.map((item) => (
                         <AuthorsItems 

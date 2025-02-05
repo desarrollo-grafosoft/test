@@ -14,7 +14,7 @@ function LastContainer() {
             <div className="container-last">
                 <div className="tittle-last">
                     <h3 className="head-title">Lo último</h3>
-                    <button className="view-button">Ver Todo</button>
+                    <button className="view-button-last">Ver Todo</button>
                 </div>
                 <ul className="list-last">
                     <li className="active"> Reciente</li>
