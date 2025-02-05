@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
+
+.card{
+    grid-column: 1/4;
+    grid-row: 9/-1;
+    display: flex;
+    align-items: center;  
+    height: 100%;
+    width: 97%;  
+}
+.card-end {
+    display: flex;
+    justify-content: space-between;
+    height: 88%;
+    width: 100%;
+    padding: 1% ;
+    background: #353A40;
+    border-radius: 12px;
+}
+.card-end img{
+    height: 100%;
+    width: auto;
+}
+.card-end-text{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    font-family: 'Red Hat Display', sans-serif;
+    justify-content: space-evenly;
+    align-items: start;
+}
+.card-end-text p{
+    font-size: 1.8vw;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.card-end-text ol{
+    padding: 0% 3% ;
+}
+.card-end-text li{
+    font-size: 1vw;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+@media (max-width: 800px) {
+    .card-end img{
+        height: auto;
+        width: 45%;
+    }
+}
+
+@media (max-width:767px) {
+    .card{
+        grid-column: 1/3;
+        grid-row: -1; 
+        width: 100%;  
+        align-items: start;
+    }
+    .card-end-text li{
+        font-size: 1.8vw;
+    }
+    .card-end-text p{
+        font-size: 2.5vw;
+    }
+
+}
+@media (max-width: 576px) {
+    .card-end-text li{
+        font-size: 1.9vw;
+    }
+    .card-end-text p{
+        font-size: 3vw;
+    }
+}
+@media (max-width: 336px) {
+    .card-end-text li{
+        font-size: 2.3vw;
+    }
+    .card-end-text p{
+        font-size: 3.5vw;
+    }
+}

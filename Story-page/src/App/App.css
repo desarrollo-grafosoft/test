@@ -1,0 +1,13 @@
+.app{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    background: #7DA870 ;
+}
+@media (max-width:767px) {
+    .app{
+        flex-direction: column;
+        height: auto;
+    }
+    
+}
