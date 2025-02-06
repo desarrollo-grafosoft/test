@@ -13,7 +13,7 @@ const Sidebar = () => {
           <li> Editores</li>
           <li> Lectores</li>
         </ul>
-        <button className="create-btn"> Crear</button>
+        <button className="create"> Crear</button>
       </aside>
     </>
   );

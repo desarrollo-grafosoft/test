@@ -22,7 +22,7 @@ const RecentActivity = () => {
   ];
 
   return (
-    <div className="recent-activity">
+    <div className="recentActivity">
       <h3>Reciente</h3>
       {activities.map((act, index) => (
         <p key={index}>

@@ -1,0 +1,12 @@
+.author {
+    overflow: auto;
+}
+
+.cardA {
+    display: flex;
+}
+
+.imgA {
+    width: 3.5vw;
+    border-radius: 20px;
+}

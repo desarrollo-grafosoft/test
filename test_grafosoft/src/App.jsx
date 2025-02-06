@@ -1,4 +1,3 @@
-import { useFetch } from "./useFetch";
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
 import StatsCard from "./components/StatsCard";
@@ -7,11 +6,10 @@ import Card from "./components/Card";
 import Intro from "./components/Intro";
 import RecentActivity from "./components/RecentActivity";
 import TipsSection from "./components/TipsSection";
+import Author from "./components/Author";
 import "./App.css";
 
 function App() {
-  const { data } = useFetch("https://rickandmortyapi.com/api/character/1,2,3");
-
   return (
     <>
       <div className="container">
@@ -19,13 +17,21 @@ function App() {
         <div className="subContainer">
           <Navbar />
           <IntroSection />
-          <div>
-            <StatsCard title="Librería" value="124" />
-            <StatsCard title="Me Gusta" value="155k" />
-            <StatsCard title="Lectores" value="8k" />
-            <StatsCard title="Opiniones" value="163k" />
+          <div className="contentS">
+            <div className="sectionA" >
+              <div className= "statsC" >
+                <StatsCard title="Librería" value="124" />
+                <StatsCard title="Me Gusta" value="155k" />
+                <StatsCard title="Lectores" value="8k" />
+                <StatsCard title="Opiniones" value="163k" />
+              </div>
+              <Author></Author>
+            </div>
+            
+            <RecentActivity></RecentActivity>
           </div>
-          <RecentActivity></RecentActivity>
+          
+          
           <TipsSection></TipsSection>
         </div>
 
@@ -48,20 +54,7 @@ function App() {
         </div>
       </div>
 
-      {/* <div>
-        <div>
-          {data?.length > 0 ? (
-            data.map((character) => (
-              <div key={character.id}>
-                <h3>{character.name}</h3>
-                <img src={character.image} alt={character.name} />
-              </div>
-            ))
-          ) : (
-            <p>...</p>
-          )}
-        </div>
-      </div> */}
+      
     </>
   );
 }
