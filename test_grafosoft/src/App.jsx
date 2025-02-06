@@ -1,6 +1,8 @@
 import { useFetch } from "./useFetch";
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
+import StatsCard from "./components/StatsCard";
+import IntroSection from "./components/IntroSection";
 import "./App.css";
 
 function App() {
@@ -8,15 +10,20 @@ function App() {
 
   return (
     <>
-      <Sidebar />
-      <Navbar />
-      <div className="subContainer">
-
-
-
+      <div className="Container">
+        <Sidebar />
+        <Navbar />
+        <div className="subContainer">
+          <IntroSection/>
+          <div>
+            <StatsCard title="hols" value={23} />
+            <StatsCard title="hols" value={23} />
+          </div>
+          
+        </div>
       </div>
-      <div>
-        <p>Hola mundo</p>
+
+      {/* <div>
         <div>
           {data?.length > 0 ? (
             data.map((character) => (
@@ -29,7 +36,7 @@ function App() {
             <p>...</p>
           )}
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
