@@ -1,4 +1,14 @@
 .intro-section {
     display: flex;
-    
+    background-color: #E9A763;
+    padding: 1vh 5vw;
+    border-radius: 25px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+.content {
+    text-align: left;
+    margin: 0vh 4vw 0vh 0vw;
 }

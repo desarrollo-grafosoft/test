@@ -14,10 +14,10 @@ function App() {
 
   return (
     <>
-      <div className="Container">
+      <div className="container">
         <Sidebar />
-        <Navbar />
         <div className="subContainer">
+          <Navbar />
           <IntroSection />
           <div>
             <StatsCard title="Librería" value="124" />
