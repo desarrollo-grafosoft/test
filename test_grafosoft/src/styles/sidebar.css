@@ -1,0 +1,29 @@
+.sidebar {
+    width: 250px;
+    background: #6fa16f;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar ul .active {
+    font-weight: bold;
+}
+
+.create-btn {
+    margin-top: 20px;
+    padding: 10px;
+    background: #4a7c4a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
