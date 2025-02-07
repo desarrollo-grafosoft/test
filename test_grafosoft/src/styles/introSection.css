@@ -12,7 +12,7 @@
 
 .intro-section h3 {
     font-size: 1.2vw;
-    margin: 0.5vh 0.1vw;
+    margin: 1.5vh 0.1vw;
 }
 
 .intro-section p {
@@ -39,4 +39,37 @@
     margin: 0vh 4vw 0vh 1vw;
     width: 100%;
     height: 100%;
+}
+
+@media (max-width: 768px) {
+    .intro-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intro-section p {
+        font-size: 3vw;
+        margin: 1vw;
+    }
+
+    .intro-section img {
+        width: 20vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .intro-section h3 {
+        font-size: 4vw;
+    }
+
+    .intro-section button {
+        width: 70%;
+        font-size: 3vw;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

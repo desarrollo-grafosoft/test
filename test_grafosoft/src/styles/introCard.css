@@ -1,6 +1,6 @@
 .intro {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 5%;
     width: 95%;
@@ -23,8 +23,14 @@
 
 .intro2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     height: 5%;
+    width: 94%;
+    align-items: center;
+}
+
+.intro2 p {
+    margin: 0 5px;
 }
 
 .card {
@@ -63,4 +69,27 @@
 
 .authorInfo img {
     width: 20%;
+}
+
+@media (max-width: 768px) {
+    .card p {
+        font-size: 3vw;
+    }
+
+    .intro h3 {
+        font-size: 3vw;
+    }
+
+    .intro button {
+        font-size: 3vw;
+    }
+
+    .intro2 p {
+        font-size: 3vw;
+    }
+
+    .card h3 {
+        font-size: 3vw;
+        margin: 1vw;
+    }
 }

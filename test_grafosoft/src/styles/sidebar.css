@@ -13,6 +13,7 @@
 .sidebar ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 .sidebar ul li {
@@ -32,4 +33,47 @@
     border: none;
     cursor: pointer;
     align-items: center;
+}
+
+.sidebar img {
+    width: 2.5vw;
+}
+
+.imgLibro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-Shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 5vw;
+    height: 10vh;
+    border-radius: 20px;
+    background-color: #90b984;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sidebar img {
+        width: 4vw;
+    }
+
+    .imgLibro {
+        width: 10%;
+        height: 5vh;
+    }
+
+    .sidebar ul {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+    }
+
+    .create {
+        padding: 0;
+    }
+
 }

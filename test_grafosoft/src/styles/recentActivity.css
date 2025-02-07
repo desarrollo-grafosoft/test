@@ -17,7 +17,7 @@
 }
 
 .contentR h3 {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 .contentR button {
@@ -47,4 +47,27 @@
 
 .date {
     text-align: right;
+}
+
+@media (max-width: 768px) {
+    .recentActivity {
+        display: flex;
+        flex-direction: column;
+        padding: 3vw;
+    }
+
+    .ContentP p {
+    font-size: 3vw;
+    margin: 0 1vw;
+    }
+
+    .contentR button{
+        font-size: 3vw;
+    }
+
+    
+    .contentR h3 {
+        font-size: 3vw;
+    }
+
 }

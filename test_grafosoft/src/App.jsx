@@ -9,6 +9,11 @@ import TipsSection from "./components/TipsSection";
 import Author from "./components/Author";
 import hoja from "./assets/hojas.jpg";
 import espacio from "./assets/espacio-tierra.jpg"
+import persona1 from "./assets/persona1.png"
+import persona2 from "./assets/persona2.png"
+import noti from "./assets/noti.jpg";
+import mensaje from "./assets/mensaje.jpg";
+import perfil from "./assets/perfil.png";
 
 import "./App.css";
 
@@ -40,7 +45,10 @@ function App() {
 
         <div className="container3">
           <div className="nav" >
-            aa
+            <img src={noti} alt="" />
+            <img src={mensaje} alt="" />
+            <h3>Andrés Vargas</h3>
+            <img src={perfil} alt="" className="profileP" />           
           </div>
           <div className="backgroundL">
             <Intro></Intro>
@@ -48,12 +56,14 @@ function App() {
               image={hoja}
               title="La Ciudadela"
               description="Descubre las maravillas escondidas en el bosque de EE.UU."
+              link = {persona1}
               author="David Jones"
               date="May 6, 2020"
             />
             <Card
               image={espacio}
               title="Space X"
+              link = {persona2}
               description="Elon Musk, un emprendedor con visión multimillonaria."
               author="Lauren Murphy"
               date="May 3, 2020"

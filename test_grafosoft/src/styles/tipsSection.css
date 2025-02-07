@@ -30,3 +30,29 @@
     text-align: left;
     padding: 0 1vw;
 }
+
+
+@media (max-width: 768px) {
+
+    .tipsSection {
+        display: flex;
+        flex-direction: column;
+        padding: 1vw;
+        margin: 2vw;
+    }
+
+    .tipsSection h3 {
+        font-size: 3.5vw;
+    }   
+
+    .tipsSection img {
+        width: 25vw;
+    }
+
+    .tipsSection ol {
+        padding: 0 2vw;
+        margin: 2vw;
+    }
+
+
+}

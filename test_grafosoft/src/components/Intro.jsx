@@ -10,7 +10,7 @@ const Intro = () => {
         </div>
         <div className="intro2">
           <p>
-            <strong>Reciente </strong>
+            <strong> {">"} Reciente </strong>
           </p>
           <p> Popular</p>
         </div>

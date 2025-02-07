@@ -18,27 +18,9 @@
 }
 
 @media (max-width: 768px) {
-    .burger {
-        display: block;
-    }
-
-    .nav-links {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #333;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
-        display: none;
-    }
-
-    .nav-links.open {
+    .navbar {
         display: flex;
+        justify-content: center;
     }
-
-    .nav-links li {
-        padding: 10px 0;
-    }
+    
 }

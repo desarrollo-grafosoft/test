@@ -9,7 +9,7 @@ const IntroSection = () => {
           <h3>Hola, Andrés! Tienes ideas sobre un nuevo libro?</h3>
           <p>Vuelve tus libros tendencia mundial!</p>
           <p>Quieres empezar a escribir una vez más?</p>
-          <button>Crear Borrador</button>
+          <button>Crear Borrador  ✚</button>
         </div>
         <img src={libro} alt="libro" />
       </div>
