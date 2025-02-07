@@ -7,6 +7,9 @@ import Intro from "./components/Intro";
 import RecentActivity from "./components/RecentActivity";
 import TipsSection from "./components/TipsSection";
 import Author from "./components/Author";
+import hoja from "./assets/hojas.jpg";
+import espacio from "./assets/espacio-tierra.jpg"
+
 import "./App.css";
 
 function App() {
@@ -35,26 +38,29 @@ function App() {
           <TipsSection></TipsSection>
         </div>
 
-        <div>
-          <Intro></Intro>
-          <Card
-            image="https://via.placeholder.com/300"
-            title="La Ciudadela"
-            description="Descubre las maravillas escondidas en el bosque de EE.UU."
-            author="David Jones"
-            date="May 6, 2020"
-          />
-          <Card
-            image="https://via.placeholder.com/300"
-            title="Space X"
-            description="Elon Musk, un emprendedor con visión multimillonaria."
-            author="Lauren Murphy"
-            date="May 3, 2020"
-          />
+        <div className="container3">
+          <div className="nav" >
+            aa
+          </div>
+          <div className="backgroundL">
+            <Intro></Intro>
+            <Card
+              image={hoja}
+              title="La Ciudadela"
+              description="Descubre las maravillas escondidas en el bosque de EE.UU."
+              author="David Jones"
+              date="May 6, 2020"
+            />
+            <Card
+              image={espacio}
+              title="Space X"
+              description="Elon Musk, un emprendedor con visión multimillonaria."
+              author="Lauren Murphy"
+              date="May 3, 2020"
+            />
+          </div>
         </div>
       </div>
-
-      
     </>
   );
 }

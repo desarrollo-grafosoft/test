@@ -1,0 +1,32 @@
+.tipsSection {
+    background-color: #343A3F;
+    color: #fff;
+    display: flex;
+    border-radius: 25px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 95%;
+    height: 90%;   
+}
+
+.tipsSection h3 {
+    font-size: 1.2vw;
+    text-align: left;
+}
+
+.tipsSection p {
+    font-size: 1vw;
+    margin: 0;
+    padding: 0;
+}
+
+.tipsSection img {
+    width: 15vw;
+    padding: 0;
+}
+
+.tipsSection ol {
+    text-align: left;
+    padding: 0 1vw;
+}

@@ -1,5 +1,8 @@
 .author {
     overflow: auto;
+    background-color: #f2f2f2;
+    border-radius: 30px;
+    box-Shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .cardA {

@@ -30,15 +30,11 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: #7DA870;
+  width: 50%;
   font-family: "Red Hat Display", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {
@@ -60,10 +56,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-img{
-  margin: 0vh 2vw;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -74,5 +66,6 @@ img{
   }
   button {
     background-color: #f9f9f9;
+    margin: 1vh 0 ;
   }
 }

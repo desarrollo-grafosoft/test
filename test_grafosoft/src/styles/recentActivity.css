@@ -1,3 +1,50 @@
 .recentActivity {
-    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    width: 80%;
+    height: 95%;
+    border-radius: 30px;
+    box-Shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 0 1.5vw;
+}
+
+.contentR {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contentR h3 {
+    font-size: 1.5vw;
+}
+
+.contentR button {
+    font-size: 0.8vw;
+    width: auto;
+    height: 5vh;
+    border-radius: 60px;
+    background-color: rgba(104, 184, 104, 0.153);
+    color: #6fa16f;
+}
+
+.ContentP {
+    display: flex;
+    justify-content: space-around;
+    padding: 1%;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    border-bottom: inset;
+}
+
+.ContentP p {
+    font-size: 1vw;
+    width: 50%;
+    margin: 0 1vw;
+}
+
+.date {
+    text-align: right;
 }

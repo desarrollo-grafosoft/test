@@ -3,7 +3,7 @@ import { useFetch } from "../useFetch";
 import "../styles/author.css";
 
 const Author = () => {
-  const { data } = useFetch("https://rickandmortyapi.com/api/character/1,2,3");
+  const { data } = useFetch("https://rickandmortyapi.com/api/character/1,2,5");
 
   return (
     <>

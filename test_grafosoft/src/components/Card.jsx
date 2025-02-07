@@ -1,17 +1,19 @@
 import "react";
 import PropTypes from "prop-types";
+import "../styles/introCard.css";
 
-const Card = ({ image, title, description, author, date }) => {
+const Card = ({ image, title, description, author, date, link }) => {
   return (
     <div className="card">
       <img src={image} alt={title} />
       <h3>{title}</h3>
       <p>{description}</p>
-      <div className="author-info">
-        <img src="https://via.placeholder.com/30" alt={author} />
-        <p>
-          {author} • {date}
-        </p>
+      <div className="authorInfo">
+        <img src={link} alt={author} />
+        <div>
+          <p>{author}</p>
+          <p>{date}</p>
+        </div>
       </div>
     </div>
   );
@@ -26,5 +28,6 @@ Card.propTypes = {
   author: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired
 };
 
